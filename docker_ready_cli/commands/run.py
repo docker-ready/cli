@@ -5,12 +5,12 @@ from docker_ready_cli.utils.tools import console
 
 
 @click.command(name="run", help="Run project.")
-@click.argument("name")
-def run(name: str) -> None:
-    if project := get_project_by_name(name=name):
+@click.argument("project_name")
+def run(project_name: str) -> None:
+    if project := get_project_by_name(name=project_name):
         run_project(project=project)
     else:
-        console.print(f"Project {name} not found.")
+        console.print(f"Project {project_name} not found.")
 
 
 __all__ = ["run"]

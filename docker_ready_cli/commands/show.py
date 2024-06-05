@@ -6,10 +6,10 @@ from docker_ready_cli.utils.tools import console
 
 
 @click.command(name="show", help="Show project information.")
-@click.option("--name", help="Project name.", default=None)
-def show(name: str | None) -> None:
-    if name:
-        _show_project_by_name(name=name)
+@click.argument("project_name", required=False)
+def show(project_name: str | None) -> None:
+    if project_name:
+        _show_project_by_name(name=project_name)
     else:
         _show_all_projects()
 
