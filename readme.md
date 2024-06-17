@@ -36,3 +36,17 @@ Show information about the project by name:
 ```shell
 $ docker-ready show PROJECT_NAME
 ```
+
+### Ps command
+
+A list of running projects with brief information about their containers.
+
+```shell
+$ docker-ready ps
+```
+
+A list of running containers for a specific project with detailed information.
+
+```shell
+$ docker-ready ps PROJECT_NAME
+```
