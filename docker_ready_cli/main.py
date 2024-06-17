@@ -1,6 +1,6 @@
 import click
 
-from docker_ready_cli.commands import run, show
+from docker_ready_cli.commands import ps, run, show
 
 
 @click.group()
@@ -10,6 +10,7 @@ def cli() -> None:
 
 cli.add_command(run)
 cli.add_command(show)
+cli.add_command(ps)
 
 
 if __name__ == "__main__":

@@ -29,10 +29,11 @@ documentation = "https://github.com/docker-ready/cli"
 python = "^3.12"
 click = "^8.1.7"
 rich = "^13.7.1"
-docker-ready = "^0.1.0"
+docker-ready = "^0.2.0"
+python-dateutil = "^2.9.0.post0"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.4.6"
+ruff = "^0.4.9"
 pytest = "^8.2.1"
 
 [tool.poetry.scripts]
